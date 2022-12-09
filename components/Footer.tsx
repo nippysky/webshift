@@ -5,10 +5,10 @@ import Logo from "../public/brand/WebshiftLogo.svg";
 
 export default function Footer() {
   return (
-    <section className="w-full bg-[#1A1A1A] px-20 pt-10 pb-5">
-      <div className="flex w-full justify-between items-center">
+    <section className="w-full bg-[#1A1A1A] lg:px-20 px-5 pt-10 pb-5">
+      <div className="flex flex-col lg:flex-row w-full justify-between items-center">
         {/* Logo */}
-        <div className="flex justify-start">
+        <div className="flex justify-start my-10 lg:m-0">
           <Link href={"/"}>
             <Image src={Logo} width={250} height={50} priority alt={"Logo"} />
           </Link>
@@ -30,14 +30,14 @@ export default function Footer() {
       </div>
 
       {/* Fotter Copyright section */}
-      <div className="w-full flex justify-between items-center mt-20">
-        <div className="w-1/2 flex justify- items-center">
+      <div className="w-full flex flex-col lg:flex-row justify-between items-center mt-20">
+        <div className="lg:w-1/2 w-full flex justify-center lg:justify-start items-center">
           <p className=" font-aeonikBold text-[#ACACAC] texxt-[0.85rem]">
             Copyright 2022 Webshift. All Rights Reserved
           </p>
         </div>
 
-        <div className="w-1/2 flex gap-10 justify-end items-center">
+        <div className="lg:w-1/2 w-full flex gap-10 lg:justify-end justify-center items-center mt-10 lg:mt-0">
           <div>
             <Link href={"/"}>
               <p className=" font-aeonikRegular text-[#ACACAC] texxt-[0.75rem]">

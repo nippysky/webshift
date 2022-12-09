@@ -5,7 +5,7 @@ import Woman from "../public/brand/Woman.png";
 
 export default function TheFuture() {
   return (
-    <section className="w-full h-[850px] relative">
+    <section className="w-full lg:h-[850px] relative">
       <div className="absolute bottom-0 right-10 w-full">
         <Image src={Woman} alt={"Woman"} width={1200} height={1500} priority />
       </div>
@@ -28,7 +28,7 @@ export default function TheFuture() {
         style={{ backgroundImage: "url('/brand/GradientBG.svg')" }}
       >
         <div className="flex flex-col justify-center">
-          <h1 className=" text-gray-300 font-kallistoMedium text-3xl opacity-50">
+          <h1 className=" text-gray-300 font-kallistoMedium text-3xl lg:opacity-50 opacity-5">
             The future of web is XR.
             <br /> The future of web is XR.
             <br /> The future of web is XR.
