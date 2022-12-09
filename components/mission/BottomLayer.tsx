@@ -30,8 +30,8 @@ export default function BottomLayer() {
       {/* RIGHT */}
       <div className="lg:w-1/2 w-full flex flex-col justify-center items-center py-20 lg:px-20 px-5">
         <div>
-          <div className="flex justify-center animate-spin">
-            <Image src={Earth} alt={"Earth"} width={350} height={350} />
+          <div className="flex justify-center animate-pulse">
+            <Image src={Earth} alt={"Earth"} width={300} height={300} />
           </div>
 
           {/* circle text */}
