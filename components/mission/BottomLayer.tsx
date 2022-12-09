@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 import Earth from "../../public/brand/Earth.svg";
+import OvalLine from "../../public/brand/OvalLine.svg";
 
 export default function BottomLayer() {
   return (
@@ -29,24 +30,22 @@ export default function BottomLayer() {
       {/* RIGHT */}
       <div className="w-1/2 flex flex-col justify-center items-center py-20 px-20">
         <div>
-          <div className="flex justify-center">
+          <div className="flex justify-center animate-spin duration-1000">
             <Image src={Earth} alt={"Earth"} width={400} height={400} />
           </div>
 
           {/* circle text */}
-          <div
-            className="flex justify-center text-center"
-            style={{
-              backgroundImage: "url('/brand/OvalLine.svg')",
-              backgroundSize: "cover",
-            }}
-          >
+          <div className="flex justify-center text-center relative">
             <p className="font-aeonikRegular text-white tex-[1.1rem] mt-20">
               We’re looking for the best designers, engineers, and free-thinkers
               to help define the future of The Internet and help bring our
               vision of XR to reality. If this is you, please consider joining
               our movement.
             </p>
+
+            <div className="absolute top-20 z-10">
+              <Image src={OvalLine} alt={"OvalLine"} width={500} height={300} />
+            </div>
           </div>
         </div>
       </div>

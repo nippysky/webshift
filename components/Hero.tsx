@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import Logo from "../public/brand/WebshiftLogo.svg";
@@ -11,7 +12,9 @@ export default function Hero() {
     >
       {/* Logo */}
       <div className="flex justify-start">
-        <Image src={Logo} width={250} height={50} priority alt={"Logo"} />
+        <Link href={"/"}>
+          <Image src={Logo} width={250} height={50} priority alt={"Logo"} />
+        </Link>
       </div>
 
       {/* Hero Details */}
