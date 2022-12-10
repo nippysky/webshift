@@ -3,22 +3,23 @@ import Link from "next/link";
 import React from "react";
 
 import Logo from "../public/brand/WebshiftLogo.svg";
+import TextSlider from "./TextSlider";
 
 export default function Hero() {
   return (
     <section
-      className="w-full h-screen lg:px-20 px-5 pt-10 flex flex-col justify-between"
+      className="w-full h-screen pt-10 flex flex-col justify-between"
       style={{ backgroundImage: "url('/brand/Homepage.svg')" }}
     >
       {/* Logo */}
-      <div className="flex lg:justify-start justify-center">
+      <div className="flex lg:justify-start justify-center lg:px-20 px-5 ">
         <Link href={"/"}>
           <Image src={Logo} width={250} height={50} priority alt={"Logo"} />
         </Link>
       </div>
 
       {/* Hero Details */}
-      <div className="flex flex-col justify-start md:w-[45%] w-full">
+      <div className="flex flex-col justify-start md:w-[45%] w-full lg:px-20 px-5 ">
         <h1 className=" font-kallistoHeavy text-[2.2rem] lg:text-[3.5rem] text-white text-center md:text-left">
           The easiest <br className="hidden lg:block" /> way to build XR
           websites.
@@ -31,7 +32,9 @@ export default function Hero() {
       </div>
 
       {/* Text Slider */}
-      <div className="w-full"></div>
+      <section className=" overflow-hidden relative">
+        <TextSlider />
+      </section>
     </section>
   );
 }
