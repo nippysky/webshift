@@ -37,8 +37,8 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="lg:w-1/2 w-full flex gap-10 lg:justify-end justify-center items-center mt-10 lg:mt-0">
-          <div>
+        <div className="lg:w-1/2 w-full flex-col lg:flex lg:flex-row text-center gap-10 lg:justify-end justify-center items-center mt-10 lg:mt-0">
+          <div className="mb-10 lg:mb-0">
             <Link href={"/"}>
               <p className=" font-aeonikRegular text-[#ACACAC] texxt-[0.75rem]">
                 Terms of Service
@@ -46,7 +46,7 @@ export default function Footer() {
             </Link>
           </div>
 
-          <div>
+          <div className="mb-10 lg:mb-0">
             <Link href={"/"}>
               <p className=" font-aeonikRegular text-[#ACACAC] texxt-[0.75rem]">
                 Privacy Policy
@@ -54,7 +54,7 @@ export default function Footer() {
             </Link>
           </div>
 
-          <div>
+          <div className="mb-10 lg:mb-0">
             <Link href={"/"}>
               <p className=" font-aeonikRegular text-[#ACACAC] texxt-[0.75rem]">
                 Cookie Policy

@@ -12,7 +12,7 @@ export default function TheFuture() {
       {/* top spiral background */}
       <div
         className="w-full h-[75%] z-0"
-        style={{ backgroundImage: "url('/brand/LineBG.svg')", zIndex: 0 }}
+        style={{ backgroundImage: "url('/brand/LineBg.svg')", zIndex: 0 }}
       >
         {/* OBJECTS */}
         <img

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 import BallSpring from "../../public/brand/BallSpring.svg";
 import Ring from "../../public/brand/Ring.svg";
@@ -22,9 +23,15 @@ export default function SecondLayer() {
 
       {/* right */}
       <div className="w-full lg:w-1/2 pt-10 lg:pt-40 px-5 lg:px-20">
-        <h1 className=" font-kallistoMedium text-[1.85rem] lg:text-[2.5rem] text-white">
+        <motion.h1
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false, amount: 0.1 }}
+          transition={{ ease: "easeOut", duration: 0.5 }}
+          className=" font-kallistoMedium text-[1.85rem] lg:text-[2.5rem] text-white"
+        >
           Design and build the future of the internet.
-        </h1>
+        </motion.h1>
 
         <p className="font-aeonikRegular text-white tex-[1.1rem] my-7">
           We believe that in the near future every website will have an AR/VR
