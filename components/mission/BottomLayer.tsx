@@ -12,15 +12,15 @@ export default function BottomLayer() {
       <div className="lg:w-1/2 w-full lg:border-r lg:border-white">
         {/* heading */}
         <div className="w-full flex justify-center items-center lg:py-20 py-10 lg:px-20 px-5 lg:h-[70%]">
-          <motion.h1
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: false, amount: 0.1 }}
-            transition={{ ease: "easeOut", duration: 0.5 }}
+          <h1
+            // initial={{ x: -100, opacity: 0 }}
+            // whileInView={{ x: 0, opacity: 1 }}
+            // viewport={{ once: false, amount: 0.1 }}
+            // transition={{ ease: "easeOut", duration: 0.5 }}
             className=" font-kallistoMedium text-[1.85rem] lg:text-[2.5rem] text-white mb-10"
           >
             Our mission is to bring the entire web to XR
-          </motion.h1>
+          </h1>
         </div>
 
         {/* colored div */}
